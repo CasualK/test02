@@ -32,6 +32,7 @@ public class EditController extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setCharacterEncoding("UTF-8");
+		resp.setHeader("Access-Control-Allow-Origin","*");
 		String sub = req.getParameter("sub");
 		String content = req.getParameter("content");
 		int rnum=Integer.parseInt(req.getParameter("rnum"));
