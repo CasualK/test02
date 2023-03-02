@@ -22,6 +22,7 @@ public class AddController extends HttpServlet{
 	}
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.setHeader("Access-Control-Allow-Origin","*");
 		req.setCharacterEncoding("UTF-8");
 		String sub = req.getParameter("sub");
 		String content = req.getParameter("content");
