@@ -33,6 +33,7 @@ public class ReController extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setCharacterEncoding("UTF-8");
+		resp.setHeader("Access-Control-Allow-Origin","*");
 		String sub = req.getParameter("sub");
 		String content = req.getParameter("content");
 		sub="└"+sub;
