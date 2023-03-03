@@ -101,7 +101,7 @@ $(function() {
 
 var listLoading=function(){
 	
-	$.getJSON('revList.do', function(data){
+	$.getJSON('http://192.168.99.100:8888/review/revList.do', function(data){
 		data.rev.forEach(function(ele) {
 			$('<tr/>')
 				.append($('<td/>').html('<a href="detail.do?rnum='+ele.rnum+'">'+ele.uname+'</a>'))
