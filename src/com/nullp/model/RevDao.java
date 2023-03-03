@@ -22,8 +22,8 @@ public class RevDao {
 	
 	public void getConnection() {
 		String url = "jdbc:mysql://localhost:3306/lecture";
-		String user = System.getenv("scott");
-		String password = System.getenv("tiger");
+		String user = "scott";
+		String password = "tiger";
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			if(conn==null || conn.isClosed())
