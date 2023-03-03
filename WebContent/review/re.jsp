@@ -61,7 +61,7 @@ textarea{
 <script type="text/javascript">
 var loadData=function(rnum){
 	$.ajax({
-		url: 'http://192.168.99.100:8080/one.do',
+		url: 'http://192.168.99.100:8080/nullproject/review/one.do',
 // 		type:'GET',	
 		contentType:'application/x-www-form-urlencoded; charset=utf-8',
 		data:{rnum:rnum},

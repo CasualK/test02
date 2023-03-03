@@ -83,7 +83,7 @@ $(function() {
 	cnt=12;
 	console.log("reload");
 	$.ajax({
-        url : "http://192.168.99.100:8080/revList.do",
+        url : "http://192.168.99.100:8080/nullproject/review/revList.do",
     	type : 'GET',
     	data : {cnt:cnt},
     	success : function(data) {
