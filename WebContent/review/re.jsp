@@ -71,7 +71,6 @@ var loadData=function(rnum){
 			.end().eq(1).val(data.revOne[0].ref)
 			.end().eq(2).val(data.revOne[0].seq)
 			.end().eq(3).val(data.revOne[0].lvl);
-
 		},
 		error: function() {  //실패시 error 콜백 ( success나 error 둘 중 하나만 나옴)
 			console.log('------------');
