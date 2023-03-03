@@ -67,7 +67,7 @@ var cnt = 12;
 var morelist = function(){
 	cnt=cnt+5;
 	$.ajax({
-	        url : "revList.do",
+	        url : "http://192.168.99.100:8080/revList.do",
         	type : 'GET',
         	data : {cnt:cnt},
         	success : function(data) {
@@ -83,7 +83,7 @@ $(function() {
 	cnt=12;
 	console.log("reload");
 	$.ajax({
-        url : "revList.do",
+        url : "http://192.168.99.100:8080/revList.do",
     	type : 'GET',
     	data : {cnt:cnt},
     	success : function(data) {
