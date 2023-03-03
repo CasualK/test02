@@ -17,7 +17,8 @@ public class ListController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// view resolver
-	
+		resp.setHeader("Access-Control-Allow-Origin","*");
+
 		RequestDispatcher rd = null;
 		rd = req.getRequestDispatcher("review.jsp");
 		rd.forward(req, resp);

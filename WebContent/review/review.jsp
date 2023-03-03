@@ -67,7 +67,7 @@ var cnt = 12;
 var morelist = function(){
 	cnt=cnt+5;
 	$.ajax({
-	        url : "http://192.168.99.100:8080/revList.do",
+	        url : "http://192.168.99.100:8888/review/revList.do",
         	type : 'GET',
         	data : {cnt:cnt},
         	success : function(data) {
@@ -83,7 +83,7 @@ $(function() {
 	cnt=12;
 	console.log("reload");
 	$.ajax({
-        url : "http://192.168.99.100:8080/nullproject/review/revList.do",
+        url : "http://192.168.99.100:8888/review/revList.do",
     	type : 'GET',
     	data : {cnt:cnt},
     	success : function(data) {
@@ -98,16 +98,7 @@ $(function() {
 
 
 
-$(document).ready(function(){
-	
-<%-- 	if(<%=login.isResult()%>==true){ --%>
-// 		$('#revBtn').children().show();
-// 	}else{
-// 		$('#revBtn').children().hide();
-// 	}
-//   $('tbody').children().hide();
-  
-});
+
 var listLoading=function(){
 	
 	$.getJSON('revList.do', function(data){

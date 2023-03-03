@@ -17,6 +17,8 @@ public class ReController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//view resolver
+		resp.setHeader("Access-Control-Allow-Origin","*");
+
 		System.out.println(req.getParameter("rnum"));
 		int rnum=Integer.parseInt(req.getParameter("rnum"));
 		RevDao dao = new RevDao();

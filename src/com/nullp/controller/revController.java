@@ -21,6 +21,8 @@ public class revController extends HttpServlet{
 		//model
 		RevDao dao = new RevDao();
 		resp.setCharacterEncoding("utf-8");
+		resp.setHeader("Access-Control-Allow-Origin","*");
+
 		PrintWriter out = resp.getWriter();
 //		System.out.println(req.getParameter("cnt"));
 		if(req.getParameter("cnt")==null && cnt ==0) {

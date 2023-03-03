@@ -17,6 +17,8 @@ public class AddController extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//view resolver
 		RequestDispatcher rd = null;
+		resp.setHeader("Access-Control-Allow-Origin","*");
+
 		rd=req.getRequestDispatcher("add.jsp");
 		rd.forward(req, resp);
 	}
